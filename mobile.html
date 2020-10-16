@@ -26,42 +26,39 @@
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="../common/normalize.css">
-    <link rel="stylesheet" href="css/bonilla.css">
+    <link rel="stylesheet" href="css/bonillaM.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/animation.css"/>
-    <link rel="stylesheet" href="css/potatomove.css"/>
+    <link rel="stylesheet" href="css/potatomoveM.css"/>
     <!--typewriter js-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/mobileMenu.js"></script>
 
 </head>
 <body>
     <header>
-        <div class="logo"><a href="bonilla.html"><img src="images/weblogo.png" alt="logo"></a></div>   
-    <nav>
-        <ul class="nav_left">    
+        <div class="open" id="open">menu</div>
+        <ul class="gnb">
             <li><a href="#">about us</a></li>
             <li><a href="#">contact</a></li>
+            <li><a href="index.html">pc ver</a></li> 
+            <li><a href="#"><a href="../portfolio/index.html">portpolio prev</a></li>
         </ul>
-        <ul class="nav_right">   
-            <li><a href="mobile.html">mobile ver</a></li>  
-            <li><a href="../portfolio/index.html">portpolio prev</a></li>  
-        </ul>
-    </nav>
    </header>
 
  <div class="container">
     <div class="contents1">
-        <h1>hope is <span><img src="images/our.png"></span>
-        <br><span><img src="images/main.png"></span> incredient</h1>
+        <img src="images/weblogo.png" class="logo">
+        <h1>hope<br>is<br><span><img src="images/our.png"></span>
+        <br><span><img src="images/main.png"></span><br>incre<br>dient</h1>
         <img src="images/potato1.png" alt="potato1" class="potato1 animation1">
-        <p>하얀 페인트통에 들어있는 독특한 비주얼의 <strong>보닐라 감자칩</strong>을 소개합니다<br>
-        스페인 북서부 지방의 명물인 보닐라 감자칩은 <strong>건강한 감자만</strong>을 선별하여 만들었습니다<br>
-        신선한 <strong>100% 올리브오일과 천일염</strong>만을 첨가해 감자 본연의 맛을 제대로 즐길 수 있어요</p>
+        <p>하얀 페인트통에 들어있는 독특한 비주얼의 <strong>보닐라 감자칩</strong>을 소개합니다 스페인 북서부 지방의 명물인 보닐라 감자칩은 <strong>건강한 감자만</strong>을 선별하여 만들었습니다.
+        신선한 <strong>100% 올리브오일과 천일염</strong>만을 첨가해 감자 본연의 맛을 제대로 즐길 수 있어요!</p>
 
 
         <div class="rain">
@@ -81,20 +78,18 @@
     </div>
 
     <div class="contents2">
-        <h1>five delicious</h1>
+        <h1>five<br>delicious</h1>
         <img src="images/reasons.png" class="reasons">
         <p>보닐라만의 맛있는 5가지 이유</p>
-        <img src="images/potato2.png" alt="potato2" class="potato2 animate__animated animate__heartBeat animate__infinite infinite ">
+        <img src="images/potato2.png" alt="potato2" class="potato2"data-aos="zoom-in">
         <div class="btnBlue">보러가기</div>
     </div>
 
     <div class="contents3">
         <div class="blueChips">
-            <div class="text1">
-                <h1>chips</h1>
-                <p>when you want simple</p>
-            </div>
-        <h1><img src="images/pack.png"></h1>
+        <h1>chips</h1>
+        <img src="images/pack.png" alt="pack" class="pack">
+        <p>when you want simple</p>
         <img src="images/potato3.png" alt="potato3" class="potato3" data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
@@ -103,12 +98,13 @@
 
         <div class="whiteChips">
             <h1>chrisps</h1>
-            <img src="images/50g.png" alt="50g" class="g50">
-            <h2>150g</h1>
-            <img src="images/300g.png" alt="300g" class="g300">
             <img src="images/potato4.png" alt="potato4" class="potato4 animation4"  data-aos="fade-left"
             data-aos-offset="500"
             data-aos-duration="500">
+            <img src="images/50g.png" alt="50g" class="g50">
+            <h2>150g</h1>
+            <img src="images/300g.png" alt="300g" class="g300">
+            
             <div class="btnWhite">구매하기</div>
         </div>
         
@@ -189,15 +185,6 @@
  
  <script>
     AOS.init();
-
-    let smartPhone = ['iphone', 'ipad', 'android'];
-    for(let i in smartPhone) {
-    
-    if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhone[i]))) {
-      alert('모바일 페이지로 이동합니다.');
-      location = 'mobile.html';
-    }
-  }
 </script>
 </body>
 
