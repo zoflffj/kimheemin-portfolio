@@ -1,0 +1,129 @@
+@charset "utf-8";
+html, body {
+    height:100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+}
+
+::selection{background-color: #000; color:#fff;}
+/****** menu ********/
+header {width: 80%; position: fixed; left: 8%; z-index:9;}
+header .logo {position: absolute;  left: 45%; right: 45%; top: 20px;}
+header .logo img{ width: 200px; height: 135px;}
+
+nav ul{list-style: none; margin: 0; padding: 0;}
+nav ul a{color: #072596; text-decoration: none; font-weight: 600; display: block; font-size: 18px;}
+
+nav .nav_left {position: absolute; display: flex; top: 50px; left: 0px;}
+nav .nav_right {position: absolute; display: flex; top:50px; right: 0px;}
+nav .nav_left li{margin: 20px;}
+nav .nav_right li{margin: 20px;}
+
+.container {width: 100%; overflow: hidden; z-index: 99; background-color: #fff; }
+
+/****** 1 ********/
+.contents1 {
+  margin:200px auto 0 auto;
+  text-align: center;
+}
+.contents1 h1 {font-size:8vw; text-align: center; font-weight:800; color: #072596; margin:0;}
+.contents1 .potato1{margin-top: 50px;}
+.contents1 p {font-family: 'Noto Sans KR', sans-serif; color: #072596; margin:50px 0 50px 0; line-height: 2;
+font-size: 1.2vw; }
+.contents1 span > img {width: 22vw;}
+
+/****** 2 ********/
+.contents2 {margin-top: 200px; width: 100%; height:950px; background-color:#f44c33; position: relative;}
+.contents2 h1{ margin: 0; color: #072596; position: absolute; font-weight: 800; top:180px; left: 100px; font-size:8vw; }
+
+.contents2 .reasons {position: absolute; top:380px; left:53vw; width: 40vw;}
+.contents2 .potato2{position: absolute; top:250px; left:18vw; width: 500px;}
+.contents2 p {position: absolute; right:6vw; color: #072596; font-size: 20px; font-family: 'Noto Sans KR', sans-serif; margin-top:500px;}
+
+.contents2 .btnBlue{width: 240px; height: 70px;
+background-color: #072596; color:#fdd781; cursor: pointer; text-align: center; line-height: 70px; font-size: 25px; position: absolute; bottom: 150px; left: 44%;font-family: 'Noto Sans KR', sans-serif;}
+.contents2 .btnBlue:hover {outline: 2px solid #072596; background-color: #f44c33; box-sizing: border-box; color: #072596; transition: 0.3s;}
+
+/********* 3-1 bluechips**************/
+.contents3 {display: flex; position: relative; width: 100%;}
+.contents3 h1{font-size:8vw;  font-weight: 800; margin:0;}
+
+.contents3 .blueChips{width: 42%; height: 980px; background-color:#072596;}
+.contents3 .blueChips .text1{left: 50px; top:140px;position: absolute; }  
+.contents3 .blueChips .text1 p{color: #fff; margin-left: 20px; font-weight: 400;}
+.contents3 .blueChips > img{position: absolute; left: 12%; top: 22%;}
+.contents3 .blueChips h1{color: #fff; }
+.contents3 .blueChips h1 > img{width: 25vw; position: absolute; bottom: 260px; left:15vw;}
+.contents3 .blueChips h1:nth-child(2){left: 15vw; bottom: 80px;}
+.contents3 .blueChips .btnBlue2{width: 245px; height: 84px;
+  background-color: #ffffff; color:#072596; cursor: pointer; text-align: center; line-height: 84px; font-size: 25px; position: absolute; bottom: 100px; left:13%; font-family: 'Noto Sans KR', sans-serif;}
+.contents3 .blueChips .btnBlue2:hover {outline: 2px solid #ffffff; background-color:#072596; box-sizing: border-box; color: #ffffff; transition: 0.2s;}
+/********* 3-2 whitechips**************/
+.contents3 .whiteChips{width: 58%; height: 980px; background-color: #ffffff;}
+.contents3 .whiteChips h1{color:#072596; position:absolute; top:140px; left:42vw;}
+.contents3 .whiteChips h2{color:#072596; font-size:8vw;  font-weight: 800; margin:0; position: absolute; bottom: 240px; left: 45vw;}
+.contents3 .whiteChips .g50 {position: absolute; top: 180px; width:15vw; right: 20px;}
+.contents3 .whiteChips .g300 {position: absolute; bottom: 260px; right: 20px; width: 20vw;}
+.contents3 .whiteChips .potato4 {position: absolute; right:14vw; top:200px;}
+.contents3 .whiteChips .btnWhite{width: 245px; height: 84px;
+  background-color:#072596; color:#ffffff; cursor: pointer; text-align: center; line-height: 84px; font-size: 25px; position: absolute; bottom: 100px; right:20%;font-family: 'Noto Sans KR', sans-serif;}
+.contents3 .whiteChips .btnWhite:hover {outline: 2px solid #072596;background-color: #ffffff; box-sizing: border-box; color: #072596; transition: 0.3s;}
+
+  /****** 4 ********/
+.contents4 {display: flex; position: relative; width: 100%;}
+.contents4 h1{font-size: 120px; position: absolute;font-weight: 800;}
+.contents4 .orangeChips{width: 50%; height: 980px; background-color: #ff9607}
+.contents4 .orangeChips .potato5{position: absolute; left: 20%; top: 18%;}
+.contents4 .orangeChips .paintCann{position:absolute; left: 4%; bottom:230px; width: 43vw;}
+.contents4 .orangeChips h1{color: #072596; font-weight: 800; left: 50px; top: 100px;}
+.contents4 .orangeChips p{color: #072596; position:absolute; top: 300px; left: 70px; font-weight: 500;}
+.contents4 .orangeChips .btnBlue2{width: 245px; height: 84px;
+  background-color:#072596; color:#ff9607; cursor: pointer; text-align: center; line-height: 84px; font-size: 25px; position: absolute; bottom: 150px; left:13%; font-family: 'Noto Sans KR', sans-serif;}
+  .contents4 .orangeChips .btnBlue2:hover {outline: 2px solid#072596; background-color: #ff9607; box-sizing: border-box; color: #072596; transition: 0.3s;}
+
+.contents4 .bluehave{width: 50%; height: 980px; background-color: #072596;}
+.contents4 .bluehave h1{color:#ff9607;  font-size: 6vw;}
+.contents4 .bluehave h1:nth-child(1){right:14%; top: 150px;}
+.contents4 .bluehave h1:nth-child(2){right: 80px; top: 380px;}
+.contents4 .bluehave h1:nth-child(3){right:30%; bottom: 100px;}
+
+.contents4 .bluehave img{position: absolute; right:3%; bottom: 120px;}
+.contents4 .bluehave .btnOrange{width: 245px; height: 84px;
+  background-color:#072596; color:#ff9607; cursor: pointer; text-align: center; line-height: 84px; font-size: 25px; position: absolute; bottom: 100px; left:18%; font-family: 'Noto Sans KR', sans-serif;}
+.contents4 .bluehave .btnOrange:hover {outline: 2px solid #072596;background-color: #ff9607; box-sizing: border-box; color: #072596; transition: 0.3s;}
+
+  /****** 5 ********/
+.contents5 {width: 100%; background-color: #fff; height: 980px; text-align: center; color: #072596; display: flex; align-items: center; position: relative; justify-content: center; margin-top: 300px;}
+.contents5 p{ position: absolute; top: 100px; font-weight: 600; font-size: 20px;}
+.contents5 h1 {font-size: 60px; font-weight: 800; line-height: 2; font-family: 'Noto Sans KR', sans-serif; margin-top: 100px;}
+
+  /****** 6 ********/
+.contents6 {width: 100%; background-color: #fff; margin:300px 0 300px 0; color: #072596; position: relative; display: flex; justify-content: center}
+.contents6 .circle{width:70%; height: 700px; border: 2px solid #072596; border-radius:50%; margin: 0 auto; }
+.contents6 p{text-align: center; font-size: 1.5vw; position: absolute; align-self:center; margin-top:350px;}
+.contents6 h1{text-align: center; font-size: 5vw; align-self: center;position: absolute;}
+.contents6 .minicircle {width: 100px; height: 100px; border-radius: 50%; border: 2px solid #072596;}
+  /****** 7 ********/
+.contents7 {width: 100%; background-color: #ffc93c; text-align: center; color: #072596; position: relative; padding-bottom: 150px;}
+.contents7 h1{font-size:18vw; margin: 0; position: absolute; font-weight: 800;}
+.contents7 .bluechu{ top: 260px; right:30px;}
+.contents7 .whitechu{color: #fff; right: 40px; top: 270px;}
+.contents7 h2{font-size: 3vw; font-weight: 500; padding-top: 100px;}
+.contents7 p{font-size:2vw; line-height: 1.4; font-family: 'Noto Sans KR', sans-serif; margin-top: 500px; }
+.contents7 .btnYellow {width: 220px; height: 70px ; outline: 2px solid #ffc93c; line-height: 70px; background-color: #072596; cursor: pointer; color: #ffc93c; font-family: 'Noto Sans KR', sans-serif; font-size: 20px; margin:0 auto;}
+.contents7 .btnYellow:hover {outline: 2px solid #072596; line-height: 70px; background-color: #ffc93c; color:#072596; transition: 0.3s;}
+.contents7 .chu img {position: absolute; top: 300px; left: 32%; width: 35vw;}
+
+  /****** 8 ********/
+.contents8 { width: 100%; height: 980px; background-color: #fff; text-align: center; position: relative; overflow: hidden;}
+.contents8 h1{font-size: 60px; color: #072596; padding-top:400px;}
+.contents8 p {font-size:20px; color: #072596; font-family: 'Noto Sans KR', sans-serif;}
+.contents8 .mail {margin-top: 50px;}
+.contents8 .mail input {outline: none;}
+.contents8 .mail input:first-child{width: 320px; height: 70px; border:3px solid #072596; font-size: 20px; box-sizing: border-box; color: #f44c33; padding: 15px;}
+.contents8 .mail input:last-child{width: 150px; height: 69px; background-color: #072596; color: #fff; font-size: 20px; text-transform: uppercase; margin-left:5px; cursor: pointer; border: 3px solid #072596; font-weight: 600;}
+.contents8 .mail input:last-child:hover{background-color: rgb(255, 255, 255); color:#072596; border: 3px solid #072596;transition: 0.3s; }
+.contents8 .minicircle {width: 100px; height: 100px; border-radius: 50%; border: 2px solid #072596;}

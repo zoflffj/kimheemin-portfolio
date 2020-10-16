@@ -1,0 +1,33 @@
+.animation1{
+    animation-name: ani1; /*애니메이션 이름, 대소문자 구분, 띄쓰X
+    불러올 keyframes 이름을 작성.*/
+    animation-duration: 0.4s; /*진행시간*/
+    animation-iteration-count: infinite;/*무한반복*/
+    
+   
+    /*움직임 형태*/
+
+    animation-direction: alternate; /*순방향 진행 후 역방향*/
+      
+    animation-fill-mode: backwards; /*끝난 후 시작점으로 돌아옴 (기본값)*/
+    
+}
+
+/*애니메이션 특성을 사용하기 위해 미리 만들어놓은 움직임*/
+@keyframes ani1 /*사용자정의이름*/{
+    from {/*움직임의 출발점 == 0 */ 
+    transform:rotate(340deg) scale(1);
+
+    }
+    50% {
+    transform:rotate(342deg);
+    }
+
+    to {/*움직임의 도착점 == 100% */
+    transform:rotate(340deg);
+    
+    }
+} 
+
+
+
