@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel="stylesheet" href="common/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/detailM.css">
+
+    <title>틱택톡 / TICTECTOC OFFICLAL STORE</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/slide.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fixed">
+            <h1><a href="index.html">logo</a></h1>
+            <!-- 좌 측 메 뉴 -->
+            <nav>
+                <div class="mobile hamburger lie" id="open"><a href="#">menu</a></div>
+
+                <div class="menu">
+                    <div class="mobile hamburger" id="close"><a href="#">menu</a></div>
+                    <img src="images/logo.png" class="mobile" alt="mobilelogo">
+                    <ul class="utill">
+                        <li><a href="#">login</a></li>
+                        <li><a href="#">join</a></li>
+                        <li><a href="#">cart</a></li>
+                        <li><a href="#">ordercheck</a></li>
+                    </ul>
+                    <ul class="gnb">
+                        <li><a href="product.html">art canvas</a></li>
+                        <li><a href="product.html">phone case</a></li>
+                        <li><a href="product.html">bag</a></li>
+                        <li><a href="product.html">etc</a></li>
+                        <li><a href="product.html">notice</a></li>
+                        <li><a href="product.html">qna</a></li>
+                        <li><a href="product.html">review</a></li>
+                        <li><a href="../index.html">[김희민 포트폴리오]</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="search">
+                <input type="text" name="search">
+                <a href="#"><img src="images/search.png" alt="search"></a>
+            </div>
+        </div>
+            <!--footer-->
+            <footer>
+                <ul>
+                    <li>+ shop info</li>
+                    <li>mon - fri on / holiday off</li>
+                    <li>am.8:00 - pm.24:00</li>
+                    <li class="line">010-4174-1334 김희민</li>
+                    <li>zoflffj@naver.com</li>
+                    <li class="line">경기도 수원시 권선구 호매실동</li>
+                </ul>
+            </footer>
+        
+        <!-------detail page---------->
+        <div class="detail">
+            <div class="flex">
+                <img src="images/product4.jpg">
+
+                <div class="description">
+                    <div class="desc">
+                        <p>[P0000KQ] Free</p>
+                        <p>soon.easy<br>
+                            개인의 내면에서, 그리고 외면의 세상에서 일어나는 현상들을<br>
+                            냉소적이고 음울한 유머감각으로 포착해
+                            그림으로 표현하고 있습니다.</p>
+                        <p>35,000won</p>
+                    </div>
+
+                    <div class="option">
+                        <p>quantity<input id="select1" name="quantity_name" style value="0" type="text">
+                            <img src="http://img.echosting.cafe24.com/design/skin/mono/product/btn_basketUp.gif"
+                                alt="up" class="QuantityUp">
+                            <img src="http://img.echosting.cafe24.com/design/skin/mono/product/btn_basketDown.gif"
+                                alt="down" class="QuantityDown"></p>
+
+                        <p>size<select name="select" id="select2">
+                                <option value="선택1" selected>-[필수]옵션을 선택해 주세요-</option>
+                                <option value="선택2">A사이즈(27.3X22cm)</option>
+                                <option value="선택3">B사이즈(41X32cm)(+14,000)</option>
+                                <option value="선택4">C사이즈(53X41cm)(+52,000)</option>
+                            </select> </p>
+                    </div>
+                    <p class="plus">총 상품금액(수량): 0(0개)</p>
+                    <div class="buy">
+                        <div class="btn" id="buynow">Buy Now</div>
+                        <div class="btn" id="cart">Cart</div>
+                        <div class="btn" id="wish">Wishlist</div>
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <a href="#detailpage">Product Detail</a>
+                <a href="#leftpage">Shipping&Exchange</a>
+                <a href="#reviewpage" class="review">Review(0)</a>
+                <a href="#reviewpage" class="qna">Q&A(0)</a>
+            </div>
+            <div class="articleM">
+                <a href="#detailpage">Detail</a>
+                <a href="#leftpage">Review/Q&A</a>
+
+            </div>
+
+            <div class="photodetail" id="detailpage">
+                <img src="images/firstphoto.png">
+                <p class="margintp"><strong>BRAND ABOUT</strong></p>
+                <p class="left">작품에는 이야기가 담겨있습니다.<br>
+                    틱택톡은 아티스트가 담은 이야기를 대중에게 전할 수 있는 작업을 합니다.
+                </p>
+                <p><strong>ART CANVAS</strong></p>
+                <p class="left marginbt">아트 캔버스(art canvas)제품은?<br>
+                    틀이 없는 캔버스 액자는 실제 작가들이 그림판으로 사용하는 재료입니다. <br>
+                    틱택톡은 아티스트의 원장을 활용, 몇번의 샘플작업을 통해 원작업과 동일한 색감을 맞춘 후,<br>
+                    캔버스 원단에 디지털 프린팅하여 캔버스 액자로 탄생시킵니다. <br>
+                    아티스트와 콜라보레이션한 아트 캔버스 액자로 빈 공간에 감성을 불어 넣어 보세요.
+                </p>
+                <img src="images/free.png">
+                <p class="center">FREE</p>
+                <img src="images/digital print on canvas.png">
+                <p class="center">DIGITAL PRINT ON CANVAS</p>
+                <img src="images/c size example.png">
+                <p class="center">C SIZE EXAMPLE</p>
+                <img src="images/c size example2.png">
+                <p class="center">C SIZE EXAMPLE</p>
+                <img src="images/back.png">
+                <p class="center">THE BACK</p>
+                <img src="images/size.png" id="leftpage">
+                <p class="center">SIZE</p>
+                <p><strong>ARTIST: SOON.EASY</strong><br></p>
+                <p class="left">구성품: 캔버스 액자<br>
+                    소재: 캔버스, 스기목<br>
+                    제조국: 대한민국<br>
+                    제조사: TICTECTOC(틱택톡)</p>
+                <p class="red"><strong>유의사항</strong><br></p>
+                <p class="left" id="reviewpage">아트캔버스 1:1 주문제작 상품으로, 제품하자가 아닌 이상 교환 또는 반품이 불가합니다.<br>
+                    기능서의 하자(색상이상, 파손) 또는 배송오류 이외에는 반품과 교환이 불가능하니, 이점 유의해 주시기 바랍니다.</p>
+                <p class="red"><strong>주의사항</strong><br></p>
+                <p class="left bottom">날카로운 것에 긁히지 않도록 조심하세요. 또는 캔버스를 세게 누르면 형태가 변형 될 수 있습니다. <br>
+                    캔버스 앞면에 물이 닿지 않게 하세요.</p>
+            </div>
+
+            <div class="review">
+                <div class="article">
+                    <a href="#detailpage">Product Detail</a>
+                    <a href="#leftpage">Shipping&Exchange</a>
+                    <a href="#reviewpage" class="rev">Review(0)</a>
+                    <a href="#reviewpage" class="qna">Q&A(0)</a>
+                    <!--qna누르면 rev가 이걸로바뀜-->
+                </div>
+                <p class="margin"><strong>REVIEW</strong></p>
+                <div class="line"></div>
+                <p class="haa">게시물이 없습니다</p>
+                <div class="line"></div>
+                <div class="rvbtn">모두보기</div>
+                <div class="rvbtn">상품후기쓰기</div>
+            </div>
+            
+            <div class="buyM">
+                <div class="btn" id="buynow">Buy Now</div>
+                <div class="btn" id="cart">Cart</div>
+                <div class="btn" id="wish">Wishlist</div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="blind"></div>
+    <script>
+        $('.qna').on('click', function () {
+         $("p.margin").html("Q&A").css("font-weight", "bold");
+        });
+
+        $('.rev').on('click', function () {
+            $("p.margin").text("REVIEW").css("font-weight", "bold");
+        });
+
+        $('.QuantityUp').on('click',function(){
+            let num = Number($('#select1').val());
+            ++num;
+            $('#select1').val(num);
+        });
+        $('.QuantityDown').on('click',function(){
+            let num = Number($('#select1').val());
+            --num;
+            if(num >= 0) {
+                $('#select1').val(num);
+            }
+        });
+    </script>
+</body>
+
+</html>

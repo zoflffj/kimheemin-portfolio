@@ -1,0 +1,53 @@
+@charset "utf-8";
+html, body {
+    height:100%;
+}
+body {
+    font-family: 'Noto Sans KR','Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif; 
+}
+.mobile {display:none;}
+.mobileBtn {display:none;}
+.pc {display:block;}
+::selection {background-color: rgba(0, 0, 0, 0.5); color: #fff;}
+.container { height: 100vh; overflow: hidden; position: relative;}
+.menu img {display: none;}
+/* .container {width: 300px; height: 100vh; overflow: hidden; position: fixed; background-color: #fff;} */
+
+/*logo*/
+.container h1 { margin:40px 0 0 50px; }
+.container h1 a{ 
+    width:142px;
+    height:39px;
+    margin:0;
+    display: block;
+    text-indent: -9999px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;}
+
+/*menu*/
+.container .fixed {height: 100%; position: fixed; order: 1; background-color: #fff; width: 300px;}
+.container ul { list-style: none; padding:0; margin:0 0 0 50px;}
+.container nav .utill a { color: black; text-decoration: none; font-size:1.4447884416924666vh;}
+
+.container nav .utill  { margin-top: 50px; display: flex;  justify-content: space-between; }
+.container nav img {display: none;}
+.container nav .utill  a:hover { border-bottom: 1px solid black;}
+
+.container nav .gnb  { margin-top: 30px;}
+.container nav .gnb  li {margin-top:10px;}
+.container nav .gnb  a {text-transform:uppercase; color: black; text-decoration: none;}
+.container nav .gnb  li:hover a{text-decoration:underline;}
+
+/*search*/
+.container .search {margin-left: 50px; border-bottom: 1px solid black; width: 199px; position: absolute; bottom: 32vh;}
+.container .search input {border:none;  outline:none; width: 169px; margin-bottom:3px;}
+
+/*footer*/
+.container footer { margin-top: 35px; font-weight: lighter; font-size: 14px; position: fixed; bottom: 10vh; }
+.container footer li{line-height: 1.8;}
+.container footer .line{margin-top: 10px;}
+.container footer a{color: black; text-decoration: none;}
+.container footer a:hover{background-color: black; color: #fff;}
+/*img*/
+.container .mainPhoto {position: absolute; top: 0; right: 0; width: 50%; height: 100vh;}
+

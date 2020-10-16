@@ -1,0 +1,118 @@
+@charset "utf-8";
+.mobile {display: block;}
+
+.mobileBtn {display: block;}
+.pc {display: none;}
+.container ul {margin:15px auto;}
+.menu img {display: block;}
+.article {display: none;}
+.articleM {display:block;}
+
+/* .container { background: url(../images/bgimg1.jpg) no-repeat 50% 20%; background-size: contain; position: relative;} */
+/*상단메뉴*/
+.lie {
+    left: 16px;
+}
+.hamburger{ 
+    background: url(../images/hamburger.png) no-repeat;
+    width:15px;
+    height:15px;
+    display: block;
+    text-indent: -9999px;
+    background-size: contain;
+    position: absolute;
+    top:2.2vh;
+    right:10px;
+}
+.container { flex-wrap: nowrap;}
+.container h1 {margin: 0; order: 1;}
+.container h1 a{ 
+    width:84px;
+    height:24px;
+    position: fixed;
+    right: 40%;
+    top: 2.2vh;
+    z-index: 999;
+}
+
+/*search*/
+.container .fixed {height: 100%; position: fixed; order: 1; background-color: #fff; width: 0; z-index:9999;}
+.container .search {position: fixed; top: 2vh; right: 4%; border: none; width:18px; height: 30px; margin: 0; z-index: 9999; order: 3;}
+.container .search a img {width: 18px; height: 18px;}
+.container .search input {display: none;}
+
+
+/*footer*/
+.container footer {display: none;}
+
+/*menu*/
+.container nav {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0; position: fixed;
+    z-index: 999; order: 2;}
+/* .container nav.on {transform: translateX(0);} */
+.container .menu {
+      width: 280px;
+      height: 100%;
+      position: relative;
+      z-index: 99;
+      
+      color: #fff;
+      font-size: 2rem;
+      left: -280px;
+}
+.container nav img {padding:7vh 0 0 6vw;  display: block;}
+.container nav .utill {width: 70%; justify-content: space-between; margin-top: 10px; margin:10px 0 0 7vw;}
+.container nav a {font-size: 14px; font-weight: lighter;}
+.container nav .gnb {width: 90%; margin-top:50px;margin-left: 7vw;}
+.container nav .gnb li{ margin-top:18px;}
+/*div로 햄버거랑 메뉴바를 감싸고 새로운 위드,백그라운드 주었더니 다른 메뉴가 안보여서
+그 메뉴값들에게 앱솔루트값을 주고 nav 위드값을 줄이면 다시 햄버거바 밑으로 메뉴들이 빼꼼 보입니다 */
+.blind {width:100%; height:100vh; background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; display: none; z-index: 99;}
+.blind.active { display: block;}
+
+
+/***********디테일***********/
+.container .detail { order: 2; margin: 60px auto; width: 100%;}
+.container .detail .buyM{display: block;}
+.container .detail .flex {flex-direction: column; width: 100%; position: relative;}
+.container .detail img {width:100%;}
+.container .detail #leftpage {width:80%; margin-left: 33px;}
+.container .detail .flex .description {margin: 0 auto;}
+.container .detail .description p:nth-child(3) {margin-top:20px; }
+.container .detail .photodetail {margin: 0; width: 100%;}
+.container .detail .review {width:100%;}
+.container .detail .buy { font-size: 14px; letter-spacing: 1px; width: 100%;}
+.container .detail .buy #buynow { width: 50%;}
+.container .detail .buy #cart { width: 25%}
+.container .detail .buy #wish { width: 25%;}
+.container .detail .buyM {width: 100%; display: flex; background-color: #fff; position: fixed; bottom: 0; left: 0; z-index: 9999; box-shadow:0 0 10px rgba(0, 0, 0, 0.3);}
+.container .detail .buyM #buynow { width: 50%;}
+.container .detail .buyM #cart { width: 20%;}
+.container .detail .buyM #wish { width: 20%;}
+.container .detail .article{margin-top:80px;}
+
+.container .detail .description {width: 90%;}
+
+
+.container .detail .description .option #select2 {font-size:12px; width:200px; margin: 0; margin-left: 38px;  padding: 10px;}
+.container .detail .description .option #select1 { margin: 0; margin-left:10px; padding: 10px;}
+.container .detail .description .option { font-size: 12px;}
+.container .detail .description .desc p:nth-child(2) {font-size:12px; width: 100%;}
+
+.container .detail .description .option .QuantityUp {position: absolute; cursor: pointer; top: 0px; left: 112px; width: 16px; height: 16px;}
+.container .detail .description .option .QuantityDown {width:12px; cursor: pointer; position: absolute; top: 17px; left: 112px; width: 16px; height: 16px;}
+
+.container .review {display: none;}
+.container .bottom {margin-bottom: 100px;}
+
+.container .articleM { text-align: center; margin-top: 50px; margin-bottom: 30px; display: block;}
+.container .articleM a{color: #7d7d7d; text-decoration: none; margin-right: 20px; font-size: 14px;}
+.container .articleM a:hover{color: black; text-decoration: underline; }
+.container .articleM a:active{color: black; text-decoration: underline;} 
+
+
+.container .photodetail p {margin-left: 15px;}
+.container .photodetail .left {width: 90%;}
