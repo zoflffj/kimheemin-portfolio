@@ -1,0 +1,132 @@
+@charset "utf-8";
+html, body {
+    height:100%;
+}
+body {
+    font-family: 'Nanum Myeongjo','Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif; 
+}
+
+.container>* {
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+}
+.container h1{
+    position: fixed;
+    left:80px; top:30px;
+}
+
+.container h1 a {
+    width:9.765625vw;
+    height:3.9787798408488064vh;
+    margin:0;
+    display: block;
+    text-indent: -9999px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+
+}
+
+
+::selection {
+    background-color: #ddd;
+}
+/*********메인************/
+.container .text {
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+.container .text h2 {
+    text-align: center;
+    font-size:29.177718832891248vh;
+    font-weight: normal;
+    margin: 0;
+    margin-top:50px;
+    margin-left:150px;
+    letter-spacing:0.1em;
+
+}
+.container .text p {
+    text-align: center;
+    font-size: 3.315649867374005vh;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 100px;
+    word-spacing: 10px;
+}
+/*********푸터************/
+.container footer {
+    position: fixed;  
+    right:30px; bottom:25vh;
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+    line-height: 0;
+}
+
+
+
+
+/*********메뉴*********/
+.container .menu {
+    position:fixed;
+    height: 100vh;
+    width: 96%;
+    right: -100%;
+    background-color: #fff;
+    z-index: 99;
+    border-left: 2px solid black;
+    }
+
+.container #open {
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background: url(../images/menubar.png) no-repeat;
+    background-size: contain;
+    position: fixed;
+    display: flex;
+    right: 90px; top:47px;
+    cursor: pointer;
+    }
+.container #close {
+    width: 23px;
+    height:23px;
+    text-indent: -9999px;
+    background: url(../images/menux.png) no-repeat;
+    background-size: contain;
+    position: fixed;
+    /* display: flex; */
+    right: 90px; top:47px;
+    cursor: pointer;
+    display: none;    
+    }
+.container .hello {
+    margin-left: 130px;
+    margin-top: 200px;
+}
+.container .hello p {
+    font-size: 50px;
+    color: #555454;
+    margin:30px;
+}
+.container .hello p a{
+    font-size: 70px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.container .hello p a:hover{
+    color: rgb(76, 0, 255);
+}
+
+.container .slide4 {
+    letter-spacing: 0.1em;
+    height:50vh;
+    background:url(../images/fixed.png) no-repeat 80% 90% fixed;
+}

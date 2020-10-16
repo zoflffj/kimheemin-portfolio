@@ -1,0 +1,123 @@
+@charset "utf-8";
+html, body {
+    height:100%;
+}
+body {
+    font-family: 'Nanum Myeongjo','Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+}
+
+.container>* {
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+}
+.container h1{
+    position: fixed;
+    left:80px; top:30px;
+}
+
+.container h1 a {
+    width:9.765625vw;
+    height:3.9787798408488064vh;
+    margin:0;
+    display: block;
+    text-indent: -9999px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+
+}
+
+::selection {
+    background-color: #ddd;
+}
+
+.slide4 {
+    background:url(../images/fixed.png) no-repeat 80% 90% fixed;
+}
+/*********메뉴*********/
+.container {
+    position: relative;
+    overflow: hidden;
+}
+.container .menu {
+    position: fixed;
+    height: 100vh;
+    width: 96%;
+    right: -100%;
+    background-color: #fff;
+    z-index: 99;
+    border-left: 2px solid black;
+    
+    }
+
+.container #open {
+    width: 30px;
+    height:30px;
+    text-indent: -9999px;
+    background: url(../images/menubar.png) no-repeat;
+    background-size: contain;
+    position: fixed;
+    display: flex;
+    right: 90px; top:47px;
+    cursor: pointer;
+    }
+.container #close {
+    width: 23px;
+    height:23px;
+    text-indent: -9999px;
+    background: url(../images/menux.png) no-repeat;
+    background-size: contain;
+    position: fixed;
+    /* display: flex; */
+    right: 90px; top:47px;
+    cursor: pointer;
+    display: none;    
+    }
+.container .hello {
+    margin-left: 130px;
+    margin-top: 200px;
+}
+.container .hello p {
+    font-size: 50px;
+    color: #555454;
+    margin:30px;
+}
+.container .hello p a{
+    font-size: 70px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.container .hello p a:hover{
+    color: rgb(76, 0, 255);
+}
+
+.container .slide4 {
+    letter-spacing: 0.1em;
+    height:50vh;
+    background:url(../images/fixed.png) no-repeat 80% 90% fixed;
+}
+/*********푸터************/
+.container footer {
+    position: fixed;  
+    right:30px; bottom:25vh;
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+    line-height: 0;
+}
+.list  {display: flex; justify-content: center;}
+.list .design { margin: 20px; margin-top: 200px; }
+.list .listBox {width: 400px; height: 300px; border:1px solid rgba(0, 0, 0, 0.1); margin-bottom: 10px;}
+.list .listBox:last-child img {width: 80%; margin:10%;}
+.list .listBox:hover .line{width: 20px; border-bottom: 1px solid black; margin-top: 5px; }
+.list .design a{ text-decoration: none; color: #000; }
+
+.list .design a:hover .shadow {background-color: rgb(0, 0, 0,0.2); width: 401px;height: 301px; position: absolute;  transition: 0.6s;}
+
+
+.slide4 {
+    letter-spacing: 0.1em;
+    height:50vh;
+    background:url(../images/fixed.png) no-repeat 80% 90% fixed;
+}
